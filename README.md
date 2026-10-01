@@ -1,5 +1,7 @@
 # AI in agribusiness managerial decision-making: replication package
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23090421.svg)](https://doi.org/10.5281/zenodo.23090421)
+
 Data, codebooks, LLM prompts, scripts and results for the structured review
 
 > Jurić Gubeljić, S., & Uroš, V. (2026). *Artificial Intelligence in Agribusiness from Operational Optimization to Strategic Decision-Making.* Paper submitted to the LIMEN 2026 conference.
@@ -53,7 +55,11 @@ Screening and coding were performed by a large language model (Claude, Anthropic
 
 ## How to cite
 
-Please cite the paper and this package (see `CITATION.cff`; the Zenodo DOI is shown on the repository page).
+Please cite the paper and this package:
+
+Jurić Gubeljić, S., & Uroš, V. (2026). *AI in agribusiness managerial decision-making: Replication package* (Version 1.0.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.23090421
+
+The concept DOI https://doi.org/10.5281/zenodo.23090420 always resolves to the latest version.
 
 ## Licence
 
