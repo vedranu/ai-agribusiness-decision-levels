@@ -1,0 +1,12 @@
+{
+  "title": "AI in agribusiness managerial decision-making: replication package",
+  "upload_type": "dataset",
+  "description": "Replication package for the structured review 'Artificial Intelligence in Agribusiness from Operational Optimization to Strategic Decision-Making' (LIMEN 2026). Contains OpenAlex and Scopus record metadata (without abstracts), LLM screening and coding results under codebooks v1 and v2, human reliability samples, codebooks and LLM prompts, PowerShell retrieval and processing scripts, and the MATLAB analysis of 350 included studies.",
+  "creators": [
+    {"name": "Jurić Gubeljić, Sanja", "orcid": "0000-0002-7385-5697", "affiliation": "University of Applied Sciences \"Marko Marulić\" of Knin"},
+    {"name": "Uroš, Vedran", "orcid": "0009-0007-6568-0827", "affiliation": "University of Zagreb, Faculty of Organization and Informatics"}
+  ],
+  "license": "cc-by-4.0",
+  "keywords": ["artificial intelligence", "agribusiness", "decision-making", "structured literature review", "OpenAlex", "large language models"],
+  "language": "eng"
+}

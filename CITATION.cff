@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this package, please cite it as below."
+title: "AI in agribusiness managerial decision-making: replication package"
+type: dataset
+version: "1.0.0"
+date-released: "2026-10-01"
+license: CC-BY-4.0
+repository-code: "https://github.com/vedranu/ai-agribusiness-decision-levels"
+authors:
+  - family-names: "Jurić Gubeljić"
+    given-names: "Sanja"
+    orcid: "https://orcid.org/0000-0002-7385-5697"
+    affiliation: "University of Applied Sciences \"Marko Marulić\" of Knin"
+  - family-names: "Uroš"
+    given-names: "Vedran"
+    orcid: "https://orcid.org/0009-0007-6568-0827"
+    affiliation: "University of Zagreb, Faculty of Organization and Informatics; University of Applied Sciences \"Marko Marulić\" of Knin"
+keywords:
+  - artificial intelligence
+  - agribusiness
+  - decision-making
+  - structured literature review
+  - OpenAlex
+  - large language models

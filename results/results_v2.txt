@@ -1,0 +1,101 @@
+N = 350 (OpenAlex 312, OpenAlex-ext 9, Scopus 28, Scopus-ext 1)
+Tip rada: EMP 199, CON 41, REV 110
+Godine 2016-2022: 61; 2023-2026: 289; 2025: 118; median godina: 2025
+Domene: CROP 124, LIVE 55, FARM 43, SCM 78, MKT 21, FIN 9, PROC 10, SUST 10, 
+Tehnike: HYB 159, ML 93, DL 62, DSS 14, OPT 13, GEN 9, 
+Akteri: FARMER 209, FIRM 44, SC 69, MIX 28, 
+
+RAZINE: O 244 (69.7 %), T 93 (26.6 %), S 13 (3.7 %)
+  sve oznacene razine: O 279, T 175, S 29; vise razina 127 (36.3 %)
+  binomni test udio O > 0.5: p = 5.85e-14
+  udio S = 3.7 % (95% CI 2.2-6.3)
+  strateski radovi po godinama: 2017:1 2023:1 2024:1 2025:5 2026:5 
+
+ULOGA: INFO 225 (64.3 %), REC 114 (32.6 %), AUTO 11 (3.1 %)
+
+Razina x uloga:
+                              InformationalRecommendation  Automation
+  Operational                          157          76          11
+  Tactical                              61          32           0
+  Strategic                              7           6           0
+  chi2(4) = 6.01, p = 0.199, Cramer V = 0.093, Monte Carlo p = 0.1909; celija E<5: 3 od 9, min E = 0.41
+
+Domena x razina (opisno; dio definicijski uvjetovan):
+                               Operational    Tactical   Strategic
+  CROP                                  93          31           0
+  LIVE                                  51           3           1
+  FARM                                  30           9           4
+  SCM                                   52          23           3
+  MKT                                    2          17           2
+  FIN                                    0           6           3
+  PROC                                  10           0           0
+  SUST                                   6           4           0
+  chi2(14) = 98.35, p = 9.88e-15, Cramer V = 0.375, Monte Carlo p = 0.0000; celija E<5: 11 od 24, min E = 0.33
+  CROP  n=124  O 75.0 %  T 25.0 %  S 0.0 %
+  LIVE  n= 55  O 92.7 %  T 5.5 %  S 1.8 %
+  FARM  n= 43  O 69.8 %  T 20.9 %  S 9.3 %
+  SCM   n= 78  O 66.7 %  T 29.5 %  S 3.8 %
+  MKT   n= 21  O 9.5 %  T 81.0 %  S 9.5 %
+  FIN   n=  9  O 0.0 %  T 66.7 %  S 33.3 %
+  PROC  n= 10  O 100.0 %  T 0.0 %  S 0.0 %
+  SUST  n= 10  O 60.0 %  T 40.0 %  S 0.0 %
+
+Akter x razina:
+                               Operational    Tactical   Strategic
+  FARMER                               164          41           4
+  FIRM                                  24          13           7
+  SC                                    42          25           2
+  MIX                                   14          14           0
+  chi2(6) = 38.85, p = 7.67e-07, Cramer V = 0.236, Monte Carlo p = 0.0001; celija E<5: 3 od 12, min E = 1.04
+  FARMER n=209  O 78.5 %  T 19.6 %  S 1.9 %
+  FIRM   n= 44  O 54.5 %  T 29.5 %  S 15.9 %
+  SC     n= 69  O 60.9 %  T 36.2 %  S 2.9 %
+  MIX    n= 28  O 50.0 %  T 50.0 %  S 0.0 %
+
+Tehnika x razina:
+                               Operational    Tactical   Strategic
+  HYB                                  117          37           5
+  ML                                    60          29           4
+  DL                                    45          17           0
+  DSS                                    6           6           2
+  OPT                                   10           2           1
+  GEN                                    6           2           1
+  chi2(10) = 14.44, p = 0.154, Cramer V = 0.144, Monte Carlo p = 0.1511; celija E<5: 8 od 18, min E = 0.33
+
+Tip rada x razina:
+                               Operational    Tactical   Strategic
+  EMP                                  122          68           9
+  CON                                   29          11           1
+  REV                                   93          14           3
+  chi2(4) = 18.57, p = 0.000953, Cramer V = 0.163, Monte Carlo p = 0.0012; celija E<5: 2 od 9, min E = 1.52
+
+Godina x razina:
+  2016  O   0 T   0 S   0 |   0
+  2017  O   1 T   1 S   1 |   3
+  2018  O   1 T   2 S   0 |   3
+  2019  O   3 T   4 S   0 |   7
+  2020  O   8 T   3 S   0 |  11
+  2021  O   9 T   6 S   0 |  15
+  2022  O  11 T  11 S   0 |  22
+  2023  O  19 T  11 S   1 |  31
+  2024  O  49 T  13 S   1 |  63
+  2025  O  92 T  21 S   5 | 118
+  2026  O  51 T  21 S   5 |  77
+
+Razdoblje (2016-2022 / 2023-2026) x razina:
+                               Operational    Tactical   Strategic
+  2016-2022                             33          27           1
+  2023-2026                            211          66          12
+  chi2(2) = 12.14, p = 0.00231, Cramer V = 0.186, Monte Carlo p = 0.0036; celija E<5: 1 od 6, min E = 2.27
+  Logit: P(primarna razina T ili S) ~ godina: b = -0.149, OR = 0.862, 95% CI 0.768-0.967, p = 0.0114
+  Logit: P(uloga REC ili AUTO) ~ godina: OR = 0.935, p = 0.242
+
+OSJETLJIVOST (bez REV, n=240): O 62.9 %, T 32.9 %, S 4.2 %; AUTO 9, INFO 55.0 %
+
+Osjetljivost: razina x uloga (bez REV):
+                              InformationalRecommendation  Automation
+  Operational                           79          63           9
+  Tactical                              47          32           0
+  Strategic                              6           4           0
+  chi2(4) = 5.86, p = 0.21, Cramer V = 0.110, Monte Carlo p = 0.1994; celija E<5: 3 od 9, min E = 0.38
+  Logit bez REV: OR = 0.856, p = 0.0198
